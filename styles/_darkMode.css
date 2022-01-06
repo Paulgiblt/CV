@@ -1,0 +1,59 @@
+.btn-DM {
+    position : absolute; 
+    z-index: 2;
+    left : 2%;
+    top : 2%;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--black-color);
+    font-family: var(--global-font);
+  }
+
+  .btn-DM-scroll {
+    position : absolute; 
+    left : 2%;
+    top : 20%;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--black-color);
+    font-family: var(--global-font);
+  }
+  
+  .label-DM-text {
+    margin-left: 16px;
+  }
+  
+  .toggle-DM {
+    isolation: isolate;
+    position: relative;
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -8px -4px 8px 0px #2e2c2c,
+    8px 4px 12px 0px #666666,
+    4px 4px 4px 0px #666666 inset,
+   -4px -4px 4px 0px #2e2c2c inset;
+  }
+  
+  .toggle-DM-state,  .toggle-DM-state-scroll {
+    display: none;
+  }
+  
+  .indicator-DM {
+    height: 100%;
+    width: 200%;
+    background: var(--white-color);
+    border-radius: 15px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+    box-shadow:
+      -8px -4px 8px 0px #2e2c2c,
+      8px 4px 12px 0px #d1d9e6;
+  }
+  
+  .toggle-DM-state:checked ~ .indicator-DM {
+    transform: translate3d(25%, 0, 0);
+  }

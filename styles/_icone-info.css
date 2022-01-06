@@ -1,0 +1,56 @@
+.icone-info{
+    height: 30px;
+    width: 30px;
+    /* margin: 2%; */
+}
+
+.bar-icone{
+    cursor: pointer;
+    position : relative;
+    top: -35px;
+    left: 105%;
+    transition : cubic-bezier(0.67,-0.41,0.27,1.6) 0.4s;
+}
+
+.bar-icone:hover{
+transform: scale(1.3);
+}
+
+.icone-question{
+    cursor: pointer;
+
+    height: 30px;
+    width: 30px;
+    /* margin: 2%; */
+    position : absolute;
+    top: 2%;
+    right: 2%;
+    transition : cubic-bezier(0.67,-0.41,0.27,1.6) 0.4s;
+}
+
+.icone-question:hover{
+    transform: scale(1.3);
+}
+
+.icone-question-scroll{
+    cursor: pointer;
+
+    height: 30px;
+    width: 30px;
+    /* margin: 2%; */
+    position : absolute;
+    top: 20%;
+    right: 2%;
+    transition : cubic-bezier(0.67,-0.41,0.27,1.6) 0.4s;
+}
+
+.icone-question-scroll:hover{
+    transform: scale(1.3);
+}
+
+.info-CV a{
+    color: var(--white-color);
+}
+
+
+

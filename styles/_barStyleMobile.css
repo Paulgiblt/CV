@@ -1,0 +1,108 @@
+/* CAS PARTICULIERS */
+#Indus{--bar-value : 100%;}
+#Web{--bar-value : 65%;}
+#TIA{--bar-value : 90%;}
+#Schneider{--bar-value : 80%;}
+#PCVue{--bar-value : 75%;}
+#Tech{--bar-value : 90%;}
+
+/* GLOBAL */
+.bar-style{
+    /* Taille */
+    width: 80%;
+    height: 70px;
+    /* Couleur */
+    color: white;
+}
+
+/* TITRE */
+.bar-style h3 {
+    /* font */
+    font-family: var(--global-font);
+    font-style: italic;
+    /* taille */
+    font-size: 1rem;
+    width: 100%;
+    /* border & margin & padding*/
+    margin-bottom : 0.25em;
+    margin-top : 0.25em;
+    /* position */
+
+    /* couleurs */
+    color: var(--black-color);
+    /* overflow */
+
+    white-space:nowrap;
+}
+
+
+.bar-style .progress-bar{
+    /* Couleur */
+    background-color: var(--background-color);
+    /* Taille */
+    height: 30px;
+    width: 100%;
+    /* Border & margin & padding */
+    border: var(--background-color) 4px solid;
+    box-shadow: 0px -9px 15px rgba(255, 255, 255, 0.4),
+    inset 0px -15px 15px rgba(0,0,0,0.5),
+    0px 9px 15px rgba(255,255,255,0.4),
+    inset 0px 15px 15px rgba(0,0,0,0.5);
+    border-radius: 6em;
+    margin-bottom: 0;
+}
+
+.bar-style .progress-bar-value{
+    /* position */
+    z-index: 2;
+    /* background */
+    background: url(../img/bar-progress5.jpg) repeat;
+    /* Taille */
+    width: var(--bar-value);
+    height: 100%;
+    /* Border & margin & padding */
+    border-radius: 6em;
+    /* animation */
+    animation : 4s linear 0s infinite bar-anim;
+}
+
+/* KEYFRAMES */
+@keyframes bar-anim{
+ from {background-position: 686%;} to {background-position: 0%;}
+}
+
+
+.info-text{
+    /* Couleur */
+    color: var(--white-color);
+    background: var(--black-color); 
+    /* Border & margin & padding */
+    margin: 0;
+    border-radius: 5px;
+    padding: 10px;
+    /* Position */
+    position: relative;
+    top: -110%;
+    left: 5%;
+    /* Animation */
+    width: 95%;
+
+}
+
+.bar-icone{
+    cursor: pointer;
+    position : relative;
+    top: -35px;
+    left: 105%;
+    transition : cubic-bezier(0.67,-0.41,0.27,1.6) 0.4s;
+}
+
+.bar-icone:hover{
+transform: scale(1.3);
+}
+
+.icone-info{
+    height: 30px;
+    width: 30px;
+    /* margin: 2%; */
+}

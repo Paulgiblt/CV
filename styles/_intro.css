@@ -1,0 +1,55 @@
+.intro{
+    background: var(--white-color);
+    padding: 5%;
+    margin: 0;
+}
+
+.info-CV{
+    z-index: 5;
+    position : absolute;
+    left: 15%;
+    top: 2%;
+    background: var(--black-color);
+    color: var(--white-color);
+    width: 70%;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.info-CV-scroll{
+    z-index: 5;
+    position : fixed;
+    left: 15%;
+    top: 2%;
+    background: var(--black-color);
+    color: var(--white-color);
+    width: 70%;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.intro-scroll{
+    position : fixed;
+    z-index: 100;
+    top: -100px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--white-color);
+    transition: ease 0.8s;
+}
+
+.title-scroll{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-scroll{
+    position : absolute;
+    top: 20%;
+    left : 30%;
+    height: 40px;
+    width: 40px;
+}
