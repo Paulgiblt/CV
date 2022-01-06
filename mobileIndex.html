@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Automaticien - Paul GIBAULT</title>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="./styleMobile.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo-PG.png">
+</head>
+<body>
+    </br>
+    <div class="photo-profil"></div>
+    <div class="description">
+        <h1>Paul GIBAULT</h1>
+        <h1>AUTOMATICIEN</h1>
+        <h3>Né le 17/07/1996</h3>
+        <h3>06 59 34 47 19</h3>
+        <h3>paul.gibault@hotmail.com</h3>
+        <h3>237 route de Bourg-en-Bresse, 01310 POLLIAT</h3>
+        <h3>Permis B (véhiculé)</h3>
+        <h3>Anglais niveau B2</h3>
+    </div>
+    <div class="abilities">
+        <div class="div-abilities">
+            <div id="Indus" class="bar-style">
+                <h3>Langages de Programmation Industriel</h3>
+                <div class="progress-bar"><div class="progress-bar-value"></div></div>
+                <img id="indus-info" class="icone-info bar-icone" src="./img/ic-info-black.png" alt="infos">
+                <p id="indus-info-text" class="info-text">Langages de Programmation pour Automate Programmable Industriel tels que : Structured Text (ST), Ladder Diagram (LD), Continuous Function Chart (CFC), Function Block Diagram (FDB).</p>
+            </div>
+            <div id="TIA" class="bar-style">
+                <h3>SIEMENS (TIA Portal)</h3>
+                <div class="progress-bar"><div class="progress-bar-value"></div></div>
+                <img id="tia-info" class="icone-info bar-icone" src="./img/ic-info-black.png" alt="infos">
+                <p id="tia-info-text" class="info-text">Logiciels de programmation automate et IHM de Siemens.</p>
+            </div>
+            <div id="Schneider" class="bar-style">
+                <h3>SCHNEIDER (Vijeo Designer, SoMachine, Unity Pro)</h3>
+                <div class="progress-bar"><div class="progress-bar-value"></div></div>
+                <img id="schneider-info" class="icone-info bar-icone" src="./img/ic-info-black.png" alt="infos">
+                <p id="schneider-info-text" class="info-text">Logiciels de programmation automate et IHM de Schneider.</p>
+            </div>
+            <div id="PCVue" class="bar-style">
+                <h3>PCVUE</h3>
+                <div class="progress-bar"><div class="progress-bar-value"></div></div>
+                <img id="pcvue-info" class="icone-info bar-icone" src="./img/ic-info-black.png" alt="infos">
+                <p id="pcvue-info-text" class="info-text">Solution de Supervision IHM/SCADA d'ARC Informatique.</p>
+            </div>
+            <div id="Tech" class="bar-style">
+                <h3>Compétences Electrotechnique</h3>
+                <div class="progress-bar"><div class="progress-bar-value"></div></div>
+                <img id="tech-info" class="icone-info bar-icone" src="./img/ic-info-black.png" alt="infos">
+                <p id="tech-info-text" class="info-text">Compétences en recherche de panne électrique, lecture de schémas, modification d'armoire électrique etc.</p>
+            </div>
+            <div id="Web" class="bar-style">
+                <h3>Langages de Programmation Web</h3>
+                <div class="progress-bar"><div class="progress-bar-value"></div></div>
+                <img id="web-info" class="icone-info bar-icone" src="./img/ic-info-black.png" alt="infos">
+                <p id="web-info-text" class="info-text">Langages de Programmation pour le Web tel que : HTML, CSS, Javascript, et certaines de leurs bibliothèques et frameworks associées.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="school">
+        <h2>Parcours Scolaire</h2>
+        <ul>
+            <li class="shcool-item">
+                <img class="logo-school" src="./img/logo-B&R.png" alt="Logo B&R">
+                <h3>Workshop : Innovative Motion - B&R, Eggelsberg (Autriche) - SuperTrak et robotique.</h3>
+                <h3>2018</h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="shcool-item">
+                <img class="logo-school" src="./img/logo-la-doua.png" alt="Logo Lyon I La Doua">
+                <h3>Licence Professionnelle S2IP (Automatisme) - Lyon I La Doua.</h3>
+                <h3>2017 - 2018</h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="shcool-item">
+                <img class="logo-school" src="./img/logo-carriat.png" alt="Logo Lycée Carriat">
+                <h3>Brevet de Technicien Supérieur Electrotechnique - Lycée CARRIAT.</h3>
+                <h3>2014 - 2016</h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="shcool-item">
+                <img class="logo-school" src="./img/logo-carriat.png" alt="Logo Lycée Carriat">
+                <h3>Baccalauréat SSI Spécialité Mathématiques - Lycée CARRIAT</h3>
+                <h3>2011 - 2014</h3>
+            </li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h2>Parcours Professionnelle</h2>
+        <ul>
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://ngengroup.fr')" src="./img/logo-NGen.png" alt="Logo NGen">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>NGen - Consultant en Automatisme.</h3>
+                <h4>En prestation pour le client CLAUGER (gestion froid/traitement d’air).</h4>
+                <h3>2019 - 2022 <em>En Cours ...</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://www.bbr-energie.fr/wp/')" src="./img/logo-BBR.png" alt="Logo BBR">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>BBR Energie - Automaticien.</h3>
+                <h4>Automaticien pour le client Mondial Frigo (gestion froid/traitement d’air).</h4>
+                <h3>2018 - 2019 <em>10 Mois</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://www.soteb.fr')" src="./img/logo-SOTEB.png" alt="Logo SOTEB">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>SOTEB - Alternant Automaticien.</h3>
+                <h4>Alternant dans le cadre de ma Licence Professionnelle S2IP.</h4>
+                <h3>2017 - 2018 <em>1 An</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://www.enedis.fr')" src="./img/logo-ENEDIS.png" alt="Logo ENEDIS">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>ENEDIS - Cartographe ZNC</h3>
+                <h4>Intérimaire dans le cadre du recouvrement Zone Non-Couverte d'ENEDIS.</h4>
+                <h3>2016 - 2017 <em>9 Mois</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://secca.biz')" src="./img/logo-SECCA.png" alt="Logo SECCA">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>SECCA - Monteur/Câbleur</h3>
+                <h4>Intérimaire pour le montage, le câblage d'armoire électrique et la mise en place sur chantier.</h4>
+                <h3>2016 <em>3 Mois</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://www.stemi.com')" src="./img/logo-STEMI.png" alt="Logo STEMI">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>STEMI - Monteur/Câbleur</h3>
+                <h4>Intérimaire pour le montage, le câblage d'armoire électrique et la mise en place sur chantier.</h4>
+                <h3>2016 <em>3 Mois</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" onclick="window.open('https://www.enedis.fr')" src="./img/logo-ENEDIS.png" alt="Logo ENEDIS">
+                <h6>↑</br> Plus d'informations ici</h6>
+                <h3>ENEDIS - Stagiaire Service Exploitation.</h3>
+                <h4>Stagiaire dans le cadre de mon BTS Electrotechnique.</h4>
+                <h3>2016 <em>1 Mois</em></h3>
+            </li>
+            <img class="ic-arrow" src="./img//ic-arrow-black.png" alt="flèche">
+            <li class="job-item">
+                <img class="logo-job" src="./img/logo-Batelec.png" alt="Logo Batelec">
+                <h3>Batelec - Stagiaire Electricien Bâtiment.</h3>
+                <h4>Stagiaire dans le cadre de mon BTS Electrotechnique.</h4>
+                <h3>2015 <em>2 Semaines</em></h3>
+            </li>
+        </ul>
+    </div>
+
+    <a href="CV-Automaticien-Paul-GIBAULT.pdf" download="CV-Automaticien-Paul-GIBAULT" class="btn-download">Télécharger CV PDF</a>
+    <p class="p-desktop-link">Version Bureau plus détaillée en <a href="./webIndex.html" class="desktop-link">cliquant ici</a>.</p>
+    <p>A consulter sur un PC.</p>
+    
+    <script src="./mobileIndex.js"></script>
+</body>
+</html>

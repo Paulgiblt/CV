@@ -1,0 +1,172 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+/* ROOT */
+:root{
+    /* Fonts */
+    --global-font : 'Roboto', sans-serif;
+    --title-font : 'Pushster', cursive;
+}
+
+body{
+    /* ----------------Couleurs---------------- */
+    /* Palette */
+    /* Palette Light */
+    --polar-white-color : #F4F9F9;
+    --light-blue-color : #CCF2F4;
+    --perso-blue-color : #A4EBF3;
+    --perso-grey-color : #AAAAAA;
+    /* Palette Dark */
+    --perso-black-color : #17171a;
+    --navy-color : #150050;
+    --light-navy-color : #3F0071;
+    --perso-purple-color : #610094;
+
+    /* Dark */
+    --dark-white-color : black;
+    --dark-black-color : white;
+    --dark-black-lowOp-color : rgba(0, 0, 0, 0.521);
+    --dark-background-color : var(--perso-black-color);
+    --dark-primary-color : var(--navy-color);
+    --dark-secondary-color : var(--light-navy-color);
+    --dark-hightlight-color : var(--perso-purple-color);
+
+    /* Light */
+    --light-white-color : white;
+    --light-black-color : black;
+    --light-black-lowOp-color : rgba(0, 0, 0, 0.41);
+    --light-background-color : var(--light-blue-color);
+    --light-primary-color : var(--perso-grey-color);
+    --light-secondary-color : var(--perso-blue-color);
+    --light-hightlight-color : var(--polar-white-color);
+    
+
+    /* Couleurs Appliquée */
+    --white-color : var(--light-white-color);
+    --black-color : var(--light-black-color);
+    --black-lowOp-color : var(--light-black-lowOp-color);
+    --background-color : var(--light-background-color);
+    --primary-color : var(--light-primary-color);
+    --secondary-color : var(--light-secondary-color);
+    --hightlight-color : var(--light-hightlight-color);
+
+    /* Marges */
+    margin: 0;
+
+    background-color: var(--white-color);
+}
+
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 700px;
+    width: 80%;
+    border-radius : 50px;
+    background-color: var(--background-color);
+}
+
+img{
+    position : absolute;
+    top : 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+input, label{
+    /* display: block; */
+    font-family: var(--global-font);
+}
+
+input[type=text], input[type=password]{
+    position : absolute;
+    top : 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    border: 2px solid var(--hightlight-color);
+    border-radius: 5px 20px 5px 20px;
+    box-shadow: inset -6px -4px 8px 0px var(--black-lowOp-color), inset 6px 4px 8px 0px var(--black-lowOp-color);
+    padding : 10px;
+}
+
+input[type=checkbox]{
+    position : absolute;
+    top : 50%;
+    left: 70%;
+    transform: translateY(-50%);
+}
+
+.label-password{
+    position : absolute;
+    top : 50%;
+    left: 50%;
+    transform: translateY(-200%);
+}
+
+.label-show-password{
+    position : absolute;
+    top : 50%;
+    left: 75%;
+    transform: translateY(-50%);
+}
+
+input[type=submit]{
+    font-family: var(--global-font);
+    border-radius : 10px;
+    height: 10%;
+    position : absolute;
+    bottom : 20%; 
+    left: 50%;
+    transform: translate(-50%);
+    border: 3px solid var(--hightlight-color);
+    background-color: var(--secondary-color);
+    transition : cubic-bezier(0.67,-0.41,0.27,1.6) 0.9s;
+    color: var(--black-color);
+}
+
+input[type=submit]:hover{
+    transform: translate(-50%) scale(1.1);
+    border: 3px solid var(--secondary-color);
+    background-color: var(--hightlight-color);
+}
+
+h3{
+    font-family: var(--global-font);
+    color : red;
+    position: absolute;
+    bottom : 5%; 
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 600px) {
+    img{
+        top : 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    
+input[type=text], input[type=password]{
+    transform: translateX(-50%);
+}
+
+.label-password{
+
+    transform: translateX(-50%) translateY(-200%);
+}
+
+.label-show-password{
+    top: 60%;
+    left: 30%;
+
+}
+
+input[type=checkbox]{
+    top : 60%;
+    left: 20%;
+}
+
+}

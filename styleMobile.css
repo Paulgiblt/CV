@@ -1,0 +1,180 @@
+@import url(./styles/_barStyleMobile.css);
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+/* ROOT */
+:root{
+    /* Fonts */
+    --global-font : 'Roboto', sans-serif;
+    --title-font : 'Pushster', cursive;
+}
+
+body{
+    /* ----------------Couleurs---------------- */
+    /* Palette */
+    /* Palette Light */
+    --polar-white-color : #F4F9F9;
+    --light-blue-color : #CCF2F4;
+    --perso-blue-color : #A4EBF3;
+    --perso-grey-color : #AAAAAA;
+    /* Palette Dark */
+    --perso-black-color : #17171a;
+    --navy-color : #150050;
+    --light-navy-color : #3F0071;
+    --perso-purple-color : #610094;
+
+    /* Dark */
+    --dark-white-color : black;
+    --dark-black-color : white;
+    --dark-black-lowOp-color : rgba(0, 0, 0, 0.521);
+    --dark-background-color : var(--perso-black-color);
+    --dark-primary-color : var(--navy-color);
+    --dark-secondary-color : var(--light-navy-color);
+    --dark-hightlight-color : var(--perso-purple-color);
+
+    /* Light */
+    --light-white-color : white;
+    --light-black-color : black;
+    --light-black-lowOp-color : rgba(0, 0, 0, 0.41);
+    --light-background-color : var(--light-blue-color);
+    --light-primary-color : var(--perso-grey-color);
+    --light-secondary-color : var(--perso-blue-color);
+    --light-hightlight-color : var(--polar-white-color);
+    
+
+    /* Couleurs Appliquée */
+    --white-color : var(--light-white-color);
+    --black-color : var(--light-black-color);
+    --black-lowOp-color : var(--light-black-lowOp-color);
+    --background-color : var(--light-background-color);
+    --primary-color : var(--light-primary-color);
+    --secondary-color : var(--light-secondary-color);
+    --hightlight-color : var(--light-hightlight-color);
+
+    /* Marges */
+    margin: 0;
+
+    background-color: var(--white-color);
+
+    /* padding: 5px; */
+}
+
+.photo-profil{
+    height: 200px;
+    width: 200px;
+    background: url("./img/photo-Profil.png") center/cover;
+    border-radius: 50%;
+    margin-left: auto ;
+    margin-right: auto ;
+    border : 5px solid var(--background-color);
+    box-shadow: 0px 20px 8px 0px var(--black-lowOp-color),
+                inset 0px 20px 8px 0px var(--black-lowOp-color);
+}
+
+.description{
+    text-align: center;
+    font-family: var(--global-font);
+    margin-bottom: 10px ;
+}
+
+.school, .job{
+    font-family: var(--global-font);
+    text-align: center;
+    box-shadow: 0px 20px 8px 0px var(--black-lowOp-color);
+    /* padding-top : 8px;
+    padding-bottom : 8px; */
+    padding : 8px 3px 8px 3px;
+    border-radius: 0 0 30px 30px;
+    border-bottom : 5px solid var(--background-color);
+}
+
+.job{
+    margin-bottom : 20px;
+}
+
+.logo-school, .logo-job{
+    height: 25%;
+    width: 25%;
+    /* border: 3px solid var(--secondary-color);
+    border-radius: 5px; */
+}
+
+.ic-arrow{
+    height: 10%;
+    width: 25%;
+    transform : scaleY(-1);
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+}
+
+.abilities{
+    background: var(--background-color);
+    box-shadow: 0px 20px 8px 0px var(--black-lowOp-color);
+    border-bottom : 5px solid var(--hightlight-color);
+    
+    /* padding : 5% 0 5% 0; */
+}
+
+.div-abilities{
+    transform: scale(0.85);
+}
+
+.btn-download{
+    position : fixed;
+    bottom : 10px;
+    left : 50%;
+    font-style: normal;
+    font-family: var(--global-font);
+    background: var(--background-color);
+    color: var(--black-color);
+    border: 4px solid var(--hightlight-color);
+    padding: 2%;
+    border-radius: 10px;
+    transform: scale(1);
+}
+
+.btn-download:hover{
+    color: var(--black-color);
+    transform: scale(1.1);
+    background: var(--hightlight-color);
+    border : 4px solid var(--background-color);
+}
+
+a{
+    font-size: small;
+    font-family: var(--global-font);
+    text-decoration : none;
+    text-align: center;
+}
+
+.desktop-link{
+    /* padding : 30px 10px 60px 10px; */
+    text-decoration: var(--primary-color);
+    width: 100%;
+}
+
+p{
+    font-family: var(--global-font);
+    font-size: small;
+    text-align: center;
+    padding-bottom : 60px;
+}
+
+.p-desktop-link{
+    padding-bottom : 20px;
+}
+
+h6{
+    margin-top: 5px;
+}
